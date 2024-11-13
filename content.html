@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Content</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+
+  <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
+
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#avalanche"></use>
+          </svg>
+          <p class="nav__link-text">Users</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#crowdfunding"></use>
+          </svg>
+          <p class="nav__link-text">Content</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#support"></use>
+          </svg>
+          <p class="nav__link-text">Support</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#password"></use>
+          </svg>
+          <p class="nav__link-text">Security Logs</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#exchange"></use>
+          </svg>
+          <p class="nav__link-text">Fees</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+
+    <div class="page">
+      <header class="header">
+        <h1 class="header__title">Users</h1>
+      </header>
+      <main class="main ">
+        <div class="users">
+          <div class="users__table ">
+            <div class="table">
+              <div class="table__header">
+                <h2 class="table__title">Users list</h2>
+                <form class="table__inputs">
+                  <div class="table__input-search input-search">
+                    <svg class="input-search__icon">
+                      <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                    <input type="text" name="" value="" placeholder="Pagem user, date" class="input-search__control">
+                  </div>
+                </form>
+                <div class="table__actions">
+                  <div class="table__button button">Create New Page</div>
+                </div>
+              </div>
+              <div class="table__body">
+                <div class="table__row">
+                  <ul class="table__items table__items--title">
+                    <li class="table__item table__item--id">ID</li>
+                    <li class="table__item">Date</li>
+                    <li class="table__item">User type</li>
+                    <li class="table__item">Page</li>
+                    <li class="table__item">Status</li>
+                    <li class="table__item"></li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="table__items">
+                    <li class="table__item">
+                      <div class="table__item-id table__item-id--check">#1532</div>
+                    </li>
+                    <li class="table__item">12.03.25/11.00</li>
+                    <li class="table__item">Admin 1</li>
+                    <li class="table__item">Crowdfunding</li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--published">Published</div>
+                    </li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button class="table__item-edit">
+                          <svg class="table__item-edit-icon">
+                            <use xlink:href="img/sprite.svg#edit"></use>
+                          </svg>
+                        </button>
+                        <button class="table__item-basket">
+                          <svg class="table__item-basket-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="table__items">
+                    <li class="table__item">
+                      <div class="table__item-id">#1532</div>
+                    </li>
+                    <li class="table__item">12.03.25/11.00</li>
+                    <li class="table__item">Admin 1</li>
+                    <li class="table__item">Crowdfunding</li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--canceled">Canceled</div>
+                    </li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button class="table__item-edit">
+                          <svg class="table__item-edit-icon">
+                            <use xlink:href="img/sprite.svg#edit"></use>
+                          </svg>
+                        </button>
+                        <button class="table__item-basket">
+                          <svg class="table__item-basket-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="table__items">
+                    <li class="table__item">
+                      <div class="table__item-id table__item-id--check">#1532</div>
+                    </li>
+                    <li class="table__item">12.03.25/11.00</li>
+                    <li class="table__item">Admin 1</li>
+                    <li class="table__item">Crowdfunding</li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--published">
+                        Published</div>
+                    </li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button class="table__item-edit">
+                          <svg class="table__item-edit-icon">
+                            <use xlink:href="img/sprite.svg#edit"></use>
+                          </svg>
+                        </button>
+                        <button class="table__item-basket">
+                          <svg class="table__item-basket-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

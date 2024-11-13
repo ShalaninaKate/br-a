@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Logs</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+
+  <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
+
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#avalanche"></use>
+          </svg>
+          <p class="nav__link-text">Users</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#crowdfunding"></use>
+          </svg>
+          <p class="nav__link-text">Content</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#support"></use>
+          </svg>
+          <p class="nav__link-text">Support</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#password"></use>
+          </svg>
+          <p class="nav__link-text">Security Logs</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#exchange"></use>
+          </svg>
+          <p class="nav__link-text">Fees</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+
+    <div class="page">
+      <header class="header">
+        <h1 class="header__title">Security Logs</h1>
+      </header>
+      <main class="main ">
+        <div class="users">
+          <div class="users__table ">
+            <div class="table">
+              <div class="table__header">
+                <h2 class="table__title">Users list</h2>
+                <div class="table__filter">
+                  <div class="table__checkbox checkbox">
+                    <input id="admins" type="checkbox" class="checkbox__input" checked>
+                    <label for="admins" class="checkbox__label">Admins</label>
+                  </div>
+                  <div class="table__checkbox checkbox">
+                    <input id="users" type="checkbox" class="checkbox__input" checked>
+                    <label for="users" class="checkbox__label">Users</label>
+                  </div>
+                  <div class="table__checkbox checkbox">
+                    <input id="moders" type="checkbox" name="fees" class="checkbox__input" checked>
+                    <label for="moders" class="checkbox__label">Moders</label>
+                  </div>
+                </div>
+                <form class="table__inputs">
+                  <div class="table__input-search input-search">
+                    <svg class="input-search__icon">
+                      <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                    <input type="text" name="" value="" placeholder="ID, Name" class="input-search__control">
+                  </div>
+                  <button class="table__input-rank input-rank">
+                    <span class="input-rank__text">Rank Filter</span>
+                    <svg class="input-rank__arrow">
+                      <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <div class="table__body">
+                <div class="table__row">
+                  <ul class="table__items table__items--title">
+                    <li class="table__item table__item--id">ID</li>
+                    <li class="table__item">Date</li>
+                    <li class="table__item">Status</li>
+                    <li class="table__item">Type</li>
+                    <li class="table__item">Action</li>
+                    <li class="table__item"></li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="table__items">
+                    <li class="table__item">
+                      <div class="table__item-id table__item-id--check">#1532</div>
+                    </li>
+                    <li class="table__item">12.03.25/11.00</li>
+                    <li class="table__item">DDoS</li>
+                    <li class="table__item">1234</li>
+                    <li class="table__item">No actions</li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button class="table__item-edit">
+                          <svg class="table__item-edit-icon">
+                            <use xlink:href="img/sprite.svg#email"></use>
+                          </svg>
+                        </button>
+                        <button class="table__item-basket">
+                          <svg class="table__item-basket-icon">
+                            <use xlink:href="img/sprite.svg#clip"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="table__items">
+                    <li class="table__item">
+                      <div class="table__item-id">#1532</div>
+                    </li>
+                    <li class="table__item">12.03.25/11.00</li>
+                    <li class="table__item">Crack</li>
+                    <li class="table__item">1234</li>
+                    <li class="table__item">Block user acc﻿aunt</li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button class="table__item-edit">
+                          <svg class="table__item-edit-icon">
+                            <use xlink:href="img/sprite.svg#email"></use>
+                          </svg>
+                        </button>
+                        <button class="table__item-basket">
+                          <svg class="table__item-basket-icon">
+                            <use xlink:href="img/sprite.svg#clip"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="table__items">
+                    <li class="table__item">
+                      <div class="table__item-id table__item-id--check">#1532</div>
+                    </li>
+                    <li class="table__item">12.03.25/11.00</li>
+                    <li class="table__item">Penetration AP</li>
+                    <li class="table__item">1234</li>
+                    <li class="table__item">Block Admin Account</li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button class="table__item-edit">
+                          <svg class="table__item-edit-icon">
+                            <use xlink:href="img/sprite.svg#email"></use>
+                          </svg>
+                        </button>
+                        <button class="table__item-basket">
+                          <svg class="table__item-basket-icon">
+                            <use xlink:href="img/sprite.svg#clip"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="table__items">
+                    <li class="table__item">
+                      <div class="table__item-id">#1532</div>
+                    </li>
+                    <li class="table__item">12.03.25/11.00</li>
+                    <li class="table__item">Unusual login location</li>
+                    <li class="table__item">1234</li>
+                    <li class="table__item">Block Admin Accounts</li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button class="table__item-edit">
+                          <svg class="table__item-edit-icon">
+                            <use xlink:href="img/sprite.svg#email"></use>
+                          </svg>
+                        </button>
+                        <button class="table__item-basket">
+                          <svg class="table__item-basket-icon">
+                            <use xlink:href="img/sprite.svg#clip"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

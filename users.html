@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Users</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+
+  <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt="logo"></a>
+
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#avalanche"></use>
+          </svg>
+          <p class="nav__link-text">Users</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#crowdfunding"></use>
+          </svg>
+          <p class="nav__link-text">Content</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#support"></use>
+          </svg>
+          <p class="nav__link-text">Support</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#password"></use>
+          </svg>
+          <p class="nav__link-text">Security Logs</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#exchange"></use>
+          </svg>
+          <p class="nav__link-text">Fees</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+
+    <div class="page">
+      <header class="header">
+        <h1 class="header__title">Users</h1>
+      </header>
+      <main class="main ">
+        <div class="users">
+          <div class="users__charts ">
+            <div class="users__chart chart-section">
+              <div class="chart-section__header">
+                <div class="chart-section__total">
+                  <h2 class="chart-section__title">Total users</h2>
+                  <div class="chart-section__amount amount">
+                    <div class="amount__text">240</div>
+                    <div class="amount__change amount__change--up">
+                      <span class="amount__change-amount">14.8%</span>
+                      <svg class="amount__change-icon">
+                        <use xlink:href="img/sprite.svg#arrow-change"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-section__legend">
+                  <span class="chart-section__legend-item chart-section__legend-item--current">Current clients</span>
+                  <button class="chart-section__calendar calendar">
+                    <img class="calendar__icon" src="./img/svg/date.svg" alt="">
+                    <span class="calendar__date">Jan 2024 — Dec 2024</span>
+                    <svg class="calendar__arrow">
+                      <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="chart-section__graph">
+                <img src="./img/graph-2.png" alt="">
+              </div>
+            </div>
+            <div class="users__chart chart-section">
+              <div class="chart-section__header">
+                <div class="chart-section__total">
+                  <h2 class="chart-section__title">Active users</h2>
+                  <div class="chart-section__amount amount">
+                    <div class="amount__text">140</div>
+                    <div class="amount__change amount__change--up">
+                      <span class="amount__change-amount">28.4%</span>
+                      <svg class="amount__change-icon">
+                        <use xlink:href="img/sprite.svg#arrow-change"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-section__legend">
+                  <span class="chart-section__legend-item chart-section__legend-item--active">Active clients</span>
+                  <button class="chart-section__calendar calendar">
+                    <img class="calendar__icon" src="./img/svg/date.svg" alt="">
+                    <span class="calendar__date">Jan 2024 — Dec 2024</span>
+                    <svg class="calendar__arrow">
+                      <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="chart-section__graph">
+                <img src="./img/graph-2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="users__table ">
+            <div class="table">
+            <div class="table__header">
+              <h2 class="table__title">Users list</h2>
+              <div class="table__filter">
+                <div class="table__checkbox checkbox">
+                  <input id="admins" type="checkbox" class="checkbox__input" checked>
+                  <label for="admins" class="checkbox__label">Admins</label>
+                </div>
+                <div class="table__checkbox checkbox">
+                  <input id="users" type="checkbox" class="checkbox__input" checked>
+                  <label for="users" class="checkbox__label">Users</label>
+                </div>
+                <div class="table__checkbox checkbox">
+                  <input id="moders" type="checkbox" name="fees" class="checkbox__input" checked>
+                  <label for="moders" class="checkbox__label">Moders</label>
+                </div>
+              </div>
+              <form class="table__inputs">
+                <div class="table__input-search input-search">
+                  <svg class="input-search__icon">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                  <input type="text" name="" value="" placeholder="ID, Name" class="input-search__control">
+                </div>
+                <button class="table__input-rank input-rank">
+                  <span class="input-rank__text">Rank Filter</span>
+                  <svg class="input-rank__arrow">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </form>
+              <div class="table__actions">
+                <button class="table__calendar calendar">
+                  <img class="calendar__icon" src="./img/svg/date.svg" alt="">
+                  <span class="calendar__date">Jan 2024</span>
+                  <svg class="calendar__arrow">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <div class="table__button button">Add admin</div>
+              </div>
+
+            </div>
+            <div class="table__body">
+              <div class="table__row">
+                <ul class="table__items table__items--users table__items--title">
+                  <li class="table__item table__item--id">ID</li>
+                  <li class="table__item">Client</li>
+                  <li class="table__item">User type</li>
+                  <li class="table__item">Deposit</li>
+                  <li class="table__item">Referals</li>
+                  <li class="table__item"> Balance</li>
+                  <li class="table__item"></li>
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="table__items table__items--users">
+                  <li class="table__item">
+                    <div class="table__item-id table__item-id--check">#1532</div>
+                  </li>
+                  <li class="table__item">
+                    <div class="table__item-client">
+                      John Carter <span>hello@johncarter.com</span>
+                    </div>
+                  </li>
+                  <li class="table__item">User</li>
+                  <li class="table__item">$ 1,099.24</li>
+                  <li class="table__item">36</li>
+                  <li class="table__item">$ 1,099.24</li>
+                  <li class="table__item">
+                    <div class="table__item-actions">
+                      <button class="table__item-btn button button--transparent unlock">Unlock</button>
+                      <button class="table__item-edit">
+                        <svg class="table__item-edit-icon">
+                          <use xlink:href="img/sprite.svg#edit"></use>
+                        </svg>
+                      </button>
+                      <button class="table__item-basket">
+                        <svg class="table__item-basket-icon">
+                          <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                      </button>
+
+                      <!-- <button class="table__item-btn button button--blue lock">Lock</button> -->
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="table__items table__items--users">
+                  <li class="table__item">
+                    <div class="table__item-id">#1532</div>
+                  </li>
+                  <li class="table__item">
+                    <div class="table__item-client">
+                      John Carter <span>hello@johncarter.com</span>
+                    </div>
+                  </li>
+                  <li class="table__item">User</li>
+                  <li class="table__item">$ 1,099.24</li>
+                  <li class="table__item">36</li>
+                  <li class="table__item">$ 1,099.24</li>
+                  <li class="table__item">
+                    <div class="table__item-actions">
+                      <button class="table__item-btn button button--blue lock">Lock</button>
+                      <button class="table__item-edit">
+                        <svg class="table__item-edit-icon">
+                          <use xlink:href="img/sprite.svg#edit"></use>
+                        </svg>
+                      </button>
+                      <button class="table__item-basket">
+                        <svg class="table__item-basket-icon">
+                          <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                      </button>
+
+                      <!-- <button class="table__item-btn button button--blue lock">Lock</button> -->
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
